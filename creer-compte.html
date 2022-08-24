@@ -38,6 +38,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Tous les projets</a></li>
           <li><a href="a-propos.html">A propos</a></li>
           <li><a href="connexion.html" class="active">Se connecter</a></li>
         </ul>
@@ -45,84 +46,94 @@
   
     </div>
   </header><!-- End Header -->
-  <!-- ======= Hero Section ======= -->
-<section id="hero" class="hero">
 
-    <div class="info d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-4 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                        <div class="card mb-6">
-                            <div class="card-body">
-                                <div class="pt-4 pb-2">
-                                    <h5 class="card-title text-center pb-0 fs-4">Créer un compte</h5>
-                                </div>
-                                <div class="top-margin">
-                                    <label class="form-label">Nom</label>
-                                    <input type="text" class="form-control" name="Nom" width="250"/>
-                                </div>
-                                <div class="top-margin">
-                                    <label class="form-label">Prénom</label>  
-                                        <input type="text" class="form-control" name="Prenom"/>
-                                </div>
-                                <div class="top-margin">
-                                    <label class="form-label">Email</label>
-                                    <input type="text" class="form-control" name="Email"/>
-                                </div>
-                                <div class="top-margin">
-                                    <label>Mot de passe<span class="text-danger">*</span></label>
-                                    <input type="password" class="form-control" name="MotDePasse"/>
-                                </div>
-                                <div class="top-margin">
-                                    <label>Confirmer votre mot de passe<span class="text-danger">*</span></label>
-                                    <input type="password" class="form-control" name="ConfirmMDP"/>
-                                </div>
-                                <div class="col-8">
-                                    <div class="form-check">
-                                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required="required" />
-                                        <label class="form-check-label">J'accepte les <a href="#">termes et les conditions</a></label>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                  <button type="submit" class="btn btn-primary">Créer compte</button>
-                                </div>
-                                <div>
-                                    <p class="card-title">Vous avez un compte? <a href="connexion.html">Connectez-vous</a> </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <main id="main">
+
+<!--     ======= Breadcrumbs =======
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('img/breadcrumbs-bg.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+        <h2>Inscription</h2>
+      </div>
+    </div> End Breadcrumbs -->
+
+  <!-- ======= Hero Section ======= -->
+  <section class="vh-100 bg-image" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+      
+    <div class="container">
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+          <div class="card mb-3">
+
+            <div class="card-body">
+
+              <div class="pt-4 pb-2">
+                <h5 class="card-title text-center pb-0 fs-4">Inscrivez-vous</h5>
+              </div>
+
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-12">
+                  <label for="yourName" class="form-label">Nom</label>
+                  <input type="text" name="name" class="form-control" id="yourName" required>
+                  <div class="invalid-feedback">Veuillez entrer votre nom!</div>
                 </div>
+
+                <div class="col-12">
+                  <label for="yourEmail" class="form-label">Prénoms</label>
+                  <input type="email" name="email" class="form-control" id="yourEmail" required>
+                  <div class="invalid-feedback">Veuillez entrer votre prénom!</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="yourUsername" class="form-label">Email</label>
+                  <div class="input-group has-validation">
+                    <input type="text" name="username" class="form-control" id="yourUsername" required>
+                    <div class="invalid-feedback">Veuillez entrer une adresse email valide!</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="yourPassword" class="form-label">Mot de passe<span>*</span></label>
+                  <input type="password" name="password" class="form-control" id="yourPassword" required>
+                  <div class="invalid-feedback">S'il vous plait entrer votre mot de passe!</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="yourPassword" class="form-label">Confirmer votre mot de passe<span>*</span></label>
+                  <label for="confPassword"></label><input type="password" name="password" class="form-control" id="confPassword" required>
+                  <div class="invalid-feedback">S'il vous plait, veuillez confirmer votre mot de passe!</div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                    <label class="form-check-label" for="acceptTerms">J'accepte les <a href="#">termes et conditions</a></label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="submit">S'inscrire</button>
+                </div>
+                <div class="col-12">
+                  <p class="small mb-0">Vous avez déjà un compte? <a href="connexion.html">Se connecter</a></p>
+                </div>
+              </form>
+              
+
             </div>
+          </div>
+
         </div>
       </div>
-    </div>
-  
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-  
-      <div class="carousel-item active" style="background-image: url(img/Crowd/Avantage.jpg)"></div>
-      <!-- <div class="carousel-item" style="background-image: url(img/Crowd/BYOD-t.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(img/Crowd/carlos.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(img/Crowd/Financement.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(img/Crowd/transformation.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(img/Crowd/crowdfunding.jpg)"></div>
-  
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-  
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a> -->
-  
-    </div>
-  
-  </section><!-- End Hero Section -->
+      
+    </div>    
+  </section>
+
+  </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
-<footer id="footer" class="footer">
+<!--<footer id="footer" class="footer">
 
     <div class="footer-content position-relative">
       <div class="container">
@@ -130,7 +141,7 @@
   
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>LooP</h3>
+              <h3>LooP.</h3>
               <p>
                 Faravohitra, Antananarivo-101 <br>
                 Madagascar<br><br>
@@ -144,7 +155,7 @@
                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-          </div><!-- End footer info column-->
+          </div>&lt;!&ndash; End footer info column&ndash;&gt;
   
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
@@ -155,7 +166,7 @@
               <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>
-          </div><!-- End footer links column-->
+          </div>&lt;!&ndash; End footer links column&ndash;&gt;
   
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
@@ -166,7 +177,7 @@
               <li><a href="#">Marketing</a></li>
               <li><a href="#">Graphic Design</a></li>
             </ul>
-          </div><!-- End footer links column-->
+          </div>&lt;!&ndash; End footer links column&ndash;&gt;
   
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Hic solutasetp</h4>
@@ -177,7 +188,7 @@
               <li><a href="#">Dilecta</a></li>
               <li><a href="#">Sit quas consectetur</a></li>
             </ul>
-          </div><!-- End footer links column-->
+          </div>&lt;!&ndash; End footer links column&ndash;&gt;
   
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Nobis illum</h4>
@@ -188,7 +199,7 @@
               <li><a href="#">Trodelas</a></li>
               <li><a href="#">Flexo</a></li>
             </ul>
-          </div><!-- End footer links column-->
+          </div>&lt;!&ndash; End footer links column&ndash;&gt;
   
         </div>
       </div>
@@ -200,12 +211,12 @@
           &copy; Copyright <strong><span>Crowdfunding</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">Mihars</a>
+          Designed by <a href="https://bootstrapmade.com/">LooP.</a>
         </div>
       </div>
     </div>
   
-  </footer>
+  </footer>-->
   <!-- End Footer -->
   
   
