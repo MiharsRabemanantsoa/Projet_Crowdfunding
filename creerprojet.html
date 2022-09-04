@@ -120,13 +120,13 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="title-item">
-                        <h2>Créer projet</h2>
+                        <h2>Créez votre campagne</h2>
                         <ul>
                             <li>
                                 <a href="index.html">Accueil</a>
                             </li>
                             <li>
-                                <span>Créer projet</span>
+                                <span>Créer campagne</span>
                             </li>
                         </ul>
                     </div>
@@ -168,7 +168,6 @@
         </li><!-- End tab nav item -->
 
         
-
       </ul>
 
       <div class="tab-content">
@@ -177,32 +176,42 @@
           <section class="section">
             <div class="row">
               <div class="card">
-                <!-- ======= Blog Details Section ======= -->
+                <!-- ======= Insertion des informations de base sur le projet ======= -->
                   <br>
                   <div class="container" data-aos="fade-up" data-aos-delay="100">
                     <div class="row">
                       <div class="col-sm-6 col-lg-6">
-                        <h5>Titre du projet</h5>
+                        <h5>Titre de votre projet</h5>
+                        <p>Choisissez un titre clair, précis et pércutant afin que les investisseurs comprennent facilement l'importance de votre projet.</p>
                       </div>
                       <div class="col-md-6 mb-4">
                         <h6>Titre </h6>
                         <div class="divtitre">
-                          <input name="titre" type="text" class="form-control" id="titre" value="" placeholder="education pour les enfants">
-                        </div>
-                        <h6>Sous-titre</h6>
-                        <div class="divsoustitre">
-                          <input name="soustitre" type="text" class="form-control" id="soustitre" value="" placeholder="education pour les enfants">
-                        </div>
+                          <input name="titre" type="text" class="form-control" id="titre" value="" placeholder="Quel est le titre de votre projet ?">
+                        </div>          
+                      </div>
+                      <hr>
+
+                      <div class="col-sm-6 col-lg-6">
+                        <h5>Description courte</h5>
+                        <p>En quoi consiste votre projet ? Expliquez en quelques phrase l'objectif et l'avantage de votre projet.</p>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <h6>Description </h6>
+                        <div class="divtitre">
+                          <input name="titre" type="text" class="form-control" id="titre" value="" placeholder="Parlez-nous de votre projet.">
+                        </div>                        
                       </div>
                       <hr>
             
                       <div class="col-sm-6 col-lg-6">
                         <h5>Catégorie du projet</h5>
+                        <p>Vers quel domaine est orienté votre projet ?</p>
                       </div>
                       <div class="col-md-6 mb-4">
                           <h6>Catégorie principale </h6>
                               <select class="form-select" aria-label="Default select example">
-                                <option selected>Open this select menu</option>
+                                <option selected>Catégorie</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -214,10 +223,12 @@
             
                         <div class="col-sm-6 col-lg-6">
                           <h5>Lieu</h5>
+                          <p>Précisez le lieu où vous allez réaliser votre projet. Connaître votre localisation rassurera encore plus les investisseurs sur la pertinence de votre projet. </p>
                         </div>
                         <div class="col-md-6 mb-4">
                           <div class="divlieu">
                             <select class="form-select" aria-label="Default select example">
+                              <!--Tokn champ de saisi no eto fa tsy dropdownlist-->
                               <option selected>Open this select menu</option>
                               <option value="1">One</option>
                               <option value="2">Two</option>
@@ -229,6 +240,7 @@
             
                         <div class="col-sm-6 col-lg-6">
                           <h5>Image</h5>
+                          <p>Entrez une image représentatif de votre projet. Choisissez une image qui illustre les valeurs de votre pour capter rapidement l'intérêt des ivestisseurs.</p>
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="card text-left">
@@ -260,74 +272,112 @@
                           <br>
                           <div class="container" data-aos="fade-up" data-aos-delay="100">
                               <div class="row">
+                                <div class="col-sm-6 col-lg-6">
+                                  <h5>Objectif de la campagne</h5>
+                                  <p>Quelle est la somme que vous souhaitez collecter ?</p>
+                              </div>
+                              <div class="col-md-6 mb-4">
+                                  <div class="divsommeobj">
+                                      <label class="col-sm-2 col-form-label">Somme</label>
+                                      <div class="col-sm-10">
+                                          <input name="objectif" type="text" class="form-control" id="objectif" placeholder="€">
+                                      </div>
+                                  </div>
+                              </div>
+                              <hr>
                                   <div class="col-sm-6 col-lg-6">
-                                      <h5>Taux intérêt annuel</h5>
+                                      <h5>Taux d'intérêt annuel</h5>
+                                      <p>C'est l'intérêt que touchera les investisseurs.</p>
                                   </div>
                                   <div class="col-md-6 mb-4">
                                       <div class="divtauxinteret">
                                           <label class="col-sm-2 col-form-label">Taux</label>
                                           <div class="col-sm-10">
-                                              <input name="taux" type="text" class="form-control" id="taux" value="">
+                                              <input name="taux" type="text" class="form-control" id="taux" placeholder="%">
                                           </div>
                                       </div>
                                   </div>
                                   <hr>
+                                  
+
                                   <div class="col-sm-6 col-lg-6">
-                                      <h5>Somme objectif</h5>
+                                      <h5>Les dates importantes</h5>
+                                      <p>La date de début est la date à laquelle vous prévoyiez de lancer votre campagne. Cependant, comme votre projet sera d'abord étudié par notre équipe avant d'être validé, il se peut que cette date ne soit pas respectée.</p>
                                   </div>
                                   <div class="col-md-6 mb-4">
-                                      <div class="divsommeobj">
-                                          <label class="col-sm-2 col-form-label">Somme</label>
+                                      <div class="divdate">
+                                          <label class="col-sm-6 col-form-label">Date de lancement souhaitée</label>
                                           <div class="col-sm-10">
-                                              <input name="objectif" type="text" class="form-control" id="objectif" value="">
+                                              <input type="date" class="form-control">
                                           </div>
+                                          <label class="col-sm-6 col-form-label">Date de fin de la campagne</label>
+                                          <div class="col-sm-10">
+                                              <input type="date" class="form-control">
+                                          </div>
+                                          <!--<label class="col-sm-2 col-form-label">Echéance</label>
+                                          <div class="col-sm-10">
+                                              <input name="echeance" type="text" class="form-control" id="echeance" value="">
+                                          </div>-->
                                       </div>
                                   </div>
                                   <hr>
 
                                   <div class="col-sm-6 col-lg-6">
-                                      <h5>date</h5>
-                                  </div>
-                                  <div class="col-md-6 mb-4">
-                                      <div class="divdate">
-                                          <label class="col-sm-2 col-form-label">Date début</label>
-                                          <div class="col-sm-10">
-                                              <input type="date" class="form-control">
-                                          </div>
-                                          <label class="col-sm-2 col-form-label">Date fin</label>
-                                          <div class="col-sm-10">
-                                              <input type="date" class="form-control">
-                                          </div>
-                                          <label class="col-sm-2 col-form-label">Echéance</label>
-                                          <div class="col-sm-10">
-                                              <input name="echeance" type="text" class="form-control" id="echeance" value="">
-                                          </div>
+                                    <h5>Echéance de remboursement</h5>
+                                    <p>L'échéance peut être journalière, hebdomadaire, mensuelle ou trimestrielle selon votre choix. Renseignez le nombre de mois correspondant dans le champ.</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="divecheance">
+                                        <label class="col-sm-6 col-form-label">Echéance</label>
+                                        <div class="col-sm-10">
+                                            <input name="echeance" type="text" class="form-control" id="echeance" placeholder="Entrez un nombre. ex : 3 si trimestriel, 1 si mensuel ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="col-sm-6 col-lg-6">
+                                  <h5>Durée de remboursement</h5>
+                                  <p>Cette information permet aux investisseurs de se positionner facilement vis-à-vis de votre projet.</p>
+                              </div>
+                              <div class="col-md-6 mb-4">
+                                  <div class="divduree">
+                                      <label class="col-sm-6 col-form-label">Durée en mois</label>
+                                      <div class="col-sm-10">
+                                          <input name="duree" type="text" class="form-control" id="duree" placeholder="ex : 36 mois">
                                       </div>
                                   </div>
-                                  <hr>
-                                  <div class="col-sm-6 col-lg-6">
+                              </div>
+                              <hr>
+
+                              <div class="col-sm-6 col-lg-6">
+                                <h5>Date de début de remboursement</h5>
+                                <p>Après la fin de la campagne, quand est-ce que vous prévoyiez de commencer à rembourser les investisseurs ?</p>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="divdatedebut">
+                                    <label class="col-sm-10 col-form-label">Début du remboursement prévu</label>
+                                    <div class="col-sm-10">
+                                        <input type="date" class="form-control">
+                                    </div>                                    
+                                </div>
+                            </div>
+                            
+
+                                 <!-- <div class="col-sm-6 col-lg-6">
                                       <h5>Montant minimum</h5>
+                                      <p>Précisez à partir de quel montant les investisserus</p>
                                   </div>
                                   <div class="col-md-6 mb-4">
                                       <div class="divmontant">
-                                          <label class="col-sm-2 col-form-label">Montant minimum</label>
+                                          <label class="col-sm-6 col-form-label">Montant minimum</label>
                                           <div class="col-sm-10">
                                               <input name="montant" type="text" class="form-control" id="Montant" value="">
                                           </div>
                                       </div>
                                   </div>
-                                  <hr>
-                                  <div class="col-sm-6 col-lg-6">
-                                      <h5>Durée remboursement</h5>
-                                  </div>
-                                  <div class="col-md-6 mb-4">
-                                      <div class="divduree">
-                                          <label class="col-sm-2 col-form-label">Durée en mois</label>
-                                          <div class="col-sm-10">
-                                              <input name="duree" type="text" class="form-control" id="duree" value="">
-                                          </div>
-                                      </div>
-                                  </div>
+                                  <hr>-->
+                                  
                                   <div>
                                       <a class="common-btn enrgis" href="#">Enregistrer</a>
                                   </div>
@@ -346,12 +396,12 @@
                 
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Profil</h5>
+                    <h5>Profil</h5>
                     
                     <!-- General Form Elements -->
                     <form>
                       <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">Image</label>
+                        <label class="col-sm-2 col-form-label">Votre photo</label>
                         <div class="col-sm-10">
                           <img src="img/profile-img.jpg" alt="Profile" class="rounded-circle center">
                         </div>
@@ -363,13 +413,13 @@
                         </div>
                       </div>
                         <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">Prenom</label>
+                        <label class="col-sm-2 col-form-label">Prénom</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control">
                         </div>
                       </div>
                         <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">Date</label>
+                        <label class="col-sm-2 col-form-label">Date de naissance</label>
                         <div class="col-sm-10">
                           <input type="date" class="form-control">
                         </div>
@@ -399,7 +449,7 @@
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">Importer CIN (recto/verso)</label>
+                        <label class="col-sm-2 col-form-label">CIN ou passeport (recto-verso)</label>
                         <div class="col-sm-10">
                           <input class="form-control" type="file" id="formFile">
                           <input class="form-control" type="file" id="formFile">
@@ -429,10 +479,10 @@
               <div class="col-lg-12 mx-auto">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Descriptions</h5>
+                    <h5>Description longue du projet</h5>
         
                     <!-- Quill Editor Full -->
-                    <p>Mettez ici vos descriptions</p>
+                    <p>Parlez-nous un peu plus de votre projet, de son histoire, de l'équipe qui le compose, etc. </p>
                     <div class="quill-editor-full">
                       <p>Hello World!</p>
                       <p>This is Quill <strong>full</strong> editor</p>
