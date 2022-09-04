@@ -117,6 +117,10 @@ ul {
           transform: translate(0, -5px);
 }
 
+.enrgis{
+  float: right;
+}
+
 .section-title {
   text-align: center;
   margin-bottom: 40px;
@@ -376,9 +380,35 @@ ul {
   background-color: #302c51;
 }
 
+.header-nav .notifications .notification-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  transition: 0.3s;
+}
+.header-nav .notifications .notification-item i {
+  margin: 0 20px 0 10px;
+  font-size: 24px;
+}
+.header-nav .notifications .notification-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.header-nav .notifications .notification-item p {
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #919191;
+}
+.header-nav .notifications .notification-item:hover {
+  background-color: #f6f9ff;
+}
+
 /*-- Navbar --*/
 .navbar-light .navbar-brand .logo-two {
   display: none;
+  width: 50%;
+  height: 170%;
 }
 
 .main-nav {

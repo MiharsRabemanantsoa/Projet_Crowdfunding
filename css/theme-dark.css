@@ -162,11 +162,15 @@
 
 .theme-dark .navbar-light .navbar-brand .logo-one {
   display: none;
+  width: 50px;
+  height: 170px;
 
 }
 
 .theme-dark .navbar-light .navbar-brand .logo-two {
   display: inline-block;
+  width: 50px;
+  height: 170px;
 }
 
 .theme-dark .main-nav {
