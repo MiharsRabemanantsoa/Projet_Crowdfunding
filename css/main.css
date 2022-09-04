@@ -349,6 +349,8 @@ section {
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
+  width: 50px;
+  height: 170px;
 }
 
 .header .logo h1 {
